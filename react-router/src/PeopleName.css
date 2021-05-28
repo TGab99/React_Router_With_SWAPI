@@ -1,0 +1,18 @@
+hr {
+    border-top: 1px solid white;
+    width: 90%;
+}
+
+table {
+    width: 100%;
+}
+
+.name {
+    text-align: right;
+    width: 50%;
+}
+
+.value {
+    width: 50%;
+    text-align: left;
+}
