@@ -1,8 +1,9 @@
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Nav from './Nav';
 import Home from './Home';
 import People from './People';
 import PeopleName from './PeopleName';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Planets from './Planets';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' exact component={Home}/>
         <Route path='/people' exact component={People}/>
         <Route path='/people/:name' component={PeopleName}/>
+        <Route path='/planets' component={Planets}/>
       </Switch>
     </Router>
   );
