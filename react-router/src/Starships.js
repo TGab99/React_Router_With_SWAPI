@@ -21,7 +21,7 @@ function Starships(){
         <div>
             {items.map((item, index) => (
                 <p key={index}>
-                    <Link key='name-style' to={`/starships/${item.name}`}>
+                    <Link className='name-style' to={`/starships/${item.name}`}>
                         {item.name}
                     </Link>
                 </p>
