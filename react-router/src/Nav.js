@@ -10,7 +10,7 @@ function App() {
                 <Link className='links-style' to="/people">People</Link>
             </li>
             <li>
-                <Link className='links-style' to="/planet">Planet</Link>
+                <Link className='links-style' to="/planets">Planet</Link>
             </li>
             <li>
                 <Link className='links-style' to="/starships">Starships</Link>
