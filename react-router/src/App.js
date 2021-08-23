@@ -11,6 +11,7 @@ import Vehicles from './Vehicles';
 import VehiclesName from './VehiclesName';
 import Species from './Species';
 import SpeciesName from './SpeciesName';
+import Films from './Films';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path='/vehicles/:name' component={VehiclesName}/>
         <Route path='/species' exact component={Species}/>
         <Route path='/species/:name' component={SpeciesName}/>
+        <Route path='/films' component={Films}/>
       </Switch>
     </Router>
   );
