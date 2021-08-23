@@ -12,6 +12,7 @@ import VehiclesName from './VehiclesName';
 import Species from './Species';
 import SpeciesName from './SpeciesName';
 import Films from './Films';
+import FilmsTitle from './FilmsTitle';
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
         <Route path='/vehicles/:name' component={VehiclesName}/>
         <Route path='/species' exact component={Species}/>
         <Route path='/species/:name' component={SpeciesName}/>
-        <Route path='/films' component={Films}/>
+        <Route path='/films' exact component={Films}/>
+        <Route path='/films/:title' component={FilmsTitle}/>
       </Switch>
     </Router>
   );
