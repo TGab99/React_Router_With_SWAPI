@@ -5,6 +5,7 @@ import People from './People';
 import PeopleName from './PeopleName';
 import Planets from './Planets';
 import PlanetsName from './PlanetsName';
+import Starships from './Starships';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/people/:name' component={PeopleName}/>
         <Route path='/planets' exact component={Planets}/>
         <Route path='/planets/:name' component={PlanetsName}/>
+        <Route path='/starships' component={Starships}/>
       </Switch>
     </Router>
   );
