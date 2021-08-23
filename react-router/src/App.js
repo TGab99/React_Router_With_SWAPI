@@ -10,6 +10,7 @@ import StarshipsName from './StarshipsName';
 import Vehicles from './Vehicles';
 import VehiclesName from './VehiclesName';
 import Species from './Species';
+import SpeciesName from './SpeciesName';
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
         <Route path='/starships/:name' component={StarshipsName}/>
         <Route path='/vehicles' exact component={Vehicles}/>
         <Route path='/vehicles/:name' component={VehiclesName}/>
-        <Route path='/species' component={Species}/>
+        <Route path='/species' exact component={Species}/>
+        <Route path='/species/:name' component={SpeciesName}/>
       </Switch>
     </Router>
   );
