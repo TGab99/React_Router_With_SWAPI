@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
+import './App.css';
 
 function Starships(){
 
@@ -18,10 +19,10 @@ function Starships(){
     }
 
     return(
-        <div>
+        <div className="name-container">
             {items.map((item, index) => (
                 <p key={index}>
-                    <Link className='name-style' to={`/starships/${item.name}`}>
+                    <Link className='names-style' to={`/starships/${item.name}`}>
                         {item.name}
                     </Link>
                 </p>
