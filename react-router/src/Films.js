@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
+import './App.css';
 
 function Films(){
 
@@ -17,7 +18,7 @@ function Films(){
         setItems(items.results);
     }
     return(
-        <div>
+        <div className="title-container">
             {items.map((item, index) => (
                 <p key={index}>
                     <Link className='title-style' to={`/films/${item.title}`}>
