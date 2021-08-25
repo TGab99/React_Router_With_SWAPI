@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import './App.css';
 
 function Planets() {
     useEffect(() => {
@@ -17,7 +18,7 @@ function Planets() {
     };
 
   return (
-    <div>
+    <div className="name-container">
         {items.map((item, index) => (
           <p key={index}>
             <Link className='names-style' to={`/planets/${item.name}`}>
