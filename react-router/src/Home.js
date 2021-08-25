@@ -1,9 +1,9 @@
-import './Home.css';
+import './App.css';
 
 function Home() {
   return (
     <div>
-        <h1>SWAPI</h1>
+        <h1>Swapi</h1>
     </div>
   );
 }
