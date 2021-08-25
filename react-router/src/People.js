@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './People.css';
+import './App.css';
 
 function People() {
 
@@ -19,7 +19,7 @@ function People() {
     };
 
     return(
-        <div>
+        <div className="name-container">
             {items.map((item, index) => (
                 <p key={index}>
                     <Link className='names-style' to={`/people/${item.name}`}>
