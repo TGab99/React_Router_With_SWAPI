@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import './App.css';
 
 function SpeciesName({ match }) {
 
@@ -17,11 +18,10 @@ function SpeciesName({ match }) {
         setItems(items.results);
     };
     return(
-        <div>
+        <div className="species-data">
             {items.map((item, index) => (
                 <>
                 <h1 key={index}>{item.name}</h1>
-                <hr/>
                 <table>
                     <tbody>
                         <tr>
