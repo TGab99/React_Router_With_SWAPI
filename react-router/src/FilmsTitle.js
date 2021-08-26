@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import './App.css';
 
 function FilmsTitle({ match }) {
 
@@ -18,11 +19,10 @@ function FilmsTitle({ match }) {
     };
 
     return(
-        <div>
+        <div className="films-data">
             {items.map((item, index) => (
                 <>
                 <h1 key={index}>{item.title}</h1>
-                <hr/>
                 <table>
                     <tbody>
                         <tr>
