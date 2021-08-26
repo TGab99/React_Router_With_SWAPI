@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './PeopleName.css';
+import './App.css';
 
 function PeopleName( { match } ) {
 
@@ -19,11 +19,10 @@ function PeopleName( { match } ) {
     };
 
     return(
-        <div>
+        <div className="people-data">
             {items.map((item, index) => (
                 <>
                 <h1 key={index}>{item.name}</h1>
-                <hr/>
                 <table>
                     <tbody>
                         <tr>
