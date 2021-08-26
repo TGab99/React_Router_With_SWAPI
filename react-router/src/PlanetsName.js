@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import './App.css';
 
 function PlanetsName({ match }) {
 
@@ -18,11 +19,10 @@ function PlanetsName({ match }) {
     }
 
     return(
-        <div>
+        <div className="planets-data">
             {items.map((item, index) => (
                 <>
                 <h1 key={index}>{item.name}</h1>
-                <hr/>
                 <table>
                     <tbody>
                         <tr>
