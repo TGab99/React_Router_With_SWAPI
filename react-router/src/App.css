@@ -12,10 +12,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+.home-container h1 {
     color: #F2EC57;
     padding-top: 50px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .nav-container nav {
@@ -60,4 +61,35 @@ h1 {
     text-decoration: none;
     font-size: 50px;
     line-height: 100px;
+}
+
+.people-data h1, 
+.films-data h1, 
+.planets-data h1, 
+.starships-data h1, 
+.vehicles-data h1, 
+.species-data h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+table {
+    width: 100%;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.name {
+    text-align: right;
+    width: 50%;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.value {
+    width: 50%;
+    text-align: left;
 }
