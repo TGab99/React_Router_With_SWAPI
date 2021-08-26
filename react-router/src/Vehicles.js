@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 
-function Vehicles() {
+function Vehicles(){
 
     useEffect(() => {
         fetchItems();
@@ -16,13 +16,13 @@ function Vehicles() {
         const items = await data.json();
         console.log(items.results);
         setItems(items.results);
-    };
+    }
 
     return(
         <div className="name-container">
             {items.map((item, index) => (
                 <p key={index}>
-                    <Link className='names-stlye' to={`/vehicles/${item.name}`}>
+                    <Link className='names-style' to={`/vehicles/${item.name}`}>
                         {item.name}
                     </Link>
                 </p>
